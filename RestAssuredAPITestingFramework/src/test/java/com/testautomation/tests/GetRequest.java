@@ -29,6 +29,9 @@ public class GetRequest {
 		
 		//verified status code
 		Assert.assertEquals(response.getStatusCode(), 200);
+		
+		//verified status line
+		Assert.assertEquals(response.getStatusLine(), "HTTP/1.1 200 OK");
 
 		//asserted 7 from json response body
 		JSONArray obj=JsonPath.read(response.getBody().asString(),"$.data..id");
