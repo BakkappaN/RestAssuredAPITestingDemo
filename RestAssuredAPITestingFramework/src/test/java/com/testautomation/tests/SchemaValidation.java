@@ -21,7 +21,7 @@ public class SchemaValidation {
 
 	@Test
 	public void schemaValidationTest() {
-
+		// add maven dependency <artifactId>json-schema-validator</artifactId>
 		// use to conver json to json schema -
 		// https://www.liquid-technologies.com/online-json-to-schema-converter
 
